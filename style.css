@@ -1,0 +1,110 @@
+<head>
+<style>
+head{
+}
+
+body, html {
+    height: 100%;
+}
+body {
+background-color: lightblue
+
+
+}
+
+body {
+    background-color: grey;
+
+}
+
+h1 {
+    color: #D09683;
+    text-align: center;
+    font: "couri";
+    font-size: 40px;
+
+}
+.parallax {
+    /* The image used */
+    background-image: url("stemhkbanner.jpg");
+
+    /* Full height */
+    height: 90%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul{
+  font-family: "sans-serrif, Times, serif";
+  font-size: 25px;
+  color: #F1F1F2;
+}
+a{
+
+  color: #F1F1F2;
+}
+p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    color: white;
+
+    ul {list-style-type: none;}
+    body {font-family: Verdana, sans-serif;}
+
+}
+
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.box {
+    padding: 30px 25px;
+    width: 100%;
+    background: #97AABd;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: #474853;
+}
+
+.button {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button:hover {opacity: 1}
+
+
+
+
+
+
+
+hr {
+height: 4px;
+color: #A1D6E2;
+background-color: #A1D6E2;
+border-color: #A1D6E2;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+</style>
+</head>

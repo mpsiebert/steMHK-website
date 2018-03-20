@@ -1,0 +1,100 @@
+<head>
+<style>
+head{
+}
+
+
+body {
+background-color: lightblue
+
+
+}
+
+body {
+    background-color: #BCBABE;
+
+}
+
+h1 {
+    color: #D09683;
+    text-align: center;
+    font: "couri";
+    font-size: 40px;
+
+}
+
+
+
+
+ul{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  color: #F1F1F2;
+}
+a{
+
+  color: #F1F1F2;
+}
+p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    color: #F1F1F2;
+}
+
+
+
+
+.boxed {
+  border: 10px solid grey ;
+  color: grey;
+}
+
+hr {
+height: 4px;
+color: #A1D6E2;
+background-color: #A1D6E2;
+border-color: #A1D6E2;
+}
+
+.dropbtn {
+    background-color: #A1D6E2;
+    color: white;
+    padding: 16px;
+    font-size: 12px;
+    border: none;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #A1D6E2;
+    min-width: 20px;
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    color: darkgrey;
+    padding: 5px 5px;
+    display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #1995AD}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #1995AD;
+}
+</style>
+</head>
