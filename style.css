@@ -60,16 +60,7 @@ p {
 ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
 
-/* Month header */
-.box {
-    padding: 30px 25px;
-    width: 100%;
-    background: #97AABd;
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 30px;
-    color: #474853;
-}
+
 
 .button {
   background-color: #f4511e;
@@ -89,10 +80,55 @@ body {font-family: Verdana, sans-serif;}
 
 
 
+.box{
+
+background: silver;
+text-align: center;
+color: #5da2d5;
+
+}
+.box:hover{
+
+  background: darkgrey;
+
+}
+
+.button {
+
+color: black;
+padding: 16px 32px;
+margin: 4px 2px;
+ display: inline-block;
+ border-radius: 10px;
+background: #f3d250;
+}
+.button:hover{
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+}
+.button1{
+size: 45px;
+background: #f3d250;
+
+
+}
+.button2{
+background: #90ccf4;
+
+}
+
+.button3{
+background: #f78888;
 
 
 
+}
 
+.button4{
+
+  background: #ececec;
+}
 hr {
 height: 4px;
 color: #A1D6E2;
