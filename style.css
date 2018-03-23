@@ -13,7 +13,7 @@ background-color: lightblue
 }
 
 body {
-    background-color: grey;
+    background-color: white;
 
 }
 
@@ -103,7 +103,7 @@ a{
 
   color: #F1F1F2;
 }
-p {
+p{
     font-family: "Times New Roman", Times, serif;
     font-size: 25px;
     color: white;
@@ -133,7 +133,7 @@ mark{
 }
 .box{
 background-color: black;
-background: silver;
+background: white;
 text-align: center;
 color: #5da2d5;
 
@@ -141,7 +141,10 @@ background-color: black;
 
 }
 
+p{
 
+
+}
 
 
 .button:hover{
@@ -181,6 +184,17 @@ img {
     height: auto;
 }
 
+iframe{
+  position:relative;
+  top: 50px;
+   left: 100px;
+  align-items: center;
+}
 
+p #online{
+  position: relative;
+  right: 80px; 
+  text-align: right;
+}
 </style>
 </head>
