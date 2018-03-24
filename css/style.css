@@ -1,14 +1,8 @@
-<head>
-<style>
-head{
-}
-
 body, html {
     height: 100%;
 }
 body {
-background-color: lightblue
-
+background-color: lightblue;
 
 }
 
@@ -26,7 +20,7 @@ h1 {
 }
 .parallax {
     /* The image used */
-    background-image: url("stemhkbanner.jpg");
+    background-image: url("../images/stemhkbanner.jpg");
 
     /* Full height */
     height: 90%;
@@ -39,7 +33,7 @@ h1 {
 }
 .parallax2 {
     /* The image used */
-    background-image: url("gradeschoolbanner.jpg");
+    background-image: url("../images/gradeschoolbanner.jpg");
 
     /* Full height */
     height: 90%;
@@ -52,7 +46,7 @@ h1 {
 }
 
 .parallax3{
-  background-image: url("middleschoolbanner.jpg");
+  background-image: url("../images/middleschoolbanner.jpg");
 
   /* Full height */
   height: 90%;
@@ -65,8 +59,8 @@ h1 {
 
 }
 
-.parallax4{
-  background-image: url("highschoolbanner.jpg");
+.parallax4 {
+  background-image: url("../images/highschoolbanner.jpg");
 
   /* Full height */
   height: 90%;
@@ -76,11 +70,9 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-
 }
 
-.parallax5{
+.parallax5 {
   background-image: url("onlinebanner.jpg");
 
   /* Full height */
@@ -94,23 +86,24 @@ h1 {
 
 
 }
-ul{
+
+ul {
   font-family: "sans-serrif, Times, serif";
   font-size: 25px;
   color: #F1F1F2;
 }
-a{
 
+a {
   color: #F1F1F2;
 }
-p{
+
+
+p {
     font-family: "Times New Roman", Times, serif;
     font-size: 25px;
     color: white;
-
     ul {list-style-type: none;}
     body {font-family: Verdana, sans-serif;}
-
 }
 
 ul {list-style-type: none;}
@@ -118,7 +111,7 @@ body {font-family: Verdana, sans-serif;}
 
 
 
-.buttons{
+.buttons {
   text-align: center;
  display: inline-block;
  position: absolute;
@@ -127,56 +120,42 @@ body {font-family: Verdana, sans-serif;}
  bottom: auto;
 
 }
-mark{
-
+mark {
   background-color: grey;
 }
-.box{
-background-color: black;
-background: white;
-text-align: center;
-color: #5da2d5;
 
-background-color: black;
-
+.box {
+  background-color: black;
+  background: white;
+  text-align: center;
+  color: #5da2d5;
+  background-color: black;
 }
 
-p{
-
-
-}
-
-
-.button:hover{
-background: black;
-color: white;
-
-
+.button:hover {
+  background: black;
+  color: white;
 }
 
 .button {
-
-
-width: 150px;
-height: 100px;
-display: table-row;
-color: black;
-padding: 16px 32px;
-margin: 4px 2px;
-display: inline-block;
-border-radius: 0px;
-background: #5da2d5;
-text-align: center;
-font-size: 20px;
+  width: 150px;
+  height: 100px;
+  display: table-row;
+  color: black;
+  padding: 16px 32px;
+  margin: 4px 2px;
+  display: inline-block;
+  border-radius: 0px;
+  background: #5da2d5;
+  text-align: center;
+  font-size: 20px;
 }
 
-
-
 hr {
-height: 4px;
-color: #A1D6E2;
-background-color: #A1D6E2;
-border-color: #A1D6E2;
+  height: 4px;
+  color: #A1D6E2;
+  background-color: #A1D6E2;
+  border-color: #A1D6E2;
 }
 
 img {
@@ -184,17 +163,15 @@ img {
     height: auto;
 }
 
-iframe{
+iframe {
   position:relative;
   top: 50px;
-   left: 100px;
+  left: 100px;
   align-items: center;
 }
 
 p #online{
   position: relative;
-  right: 80px; 
+  right: 80px;
   text-align: right;
 }
-</style>
-</head>
