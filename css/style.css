@@ -2,13 +2,15 @@ body, html {
     height: 100%;
 }
 body {
-background-color: lightblue;
-
+  background-color: lightblue;
+  font-family: Verdana, sans-serif;
 }
 
+header {
+  background-color: #ECECEC;
+}
 body {
     background-color: white;
-
 }
 
 h1 {
@@ -16,7 +18,6 @@ h1 {
     text-align: center;
     font: "couri";
     font-size: 40px;
-
 }
 .parallax {
     /* The image used */
@@ -91,6 +92,7 @@ ul {
   font-family: "sans-serrif, Times, serif";
   font-size: 25px;
   color: #F1F1F2;
+  list-style-type: none;
 }
 
 a {
@@ -106,8 +108,6 @@ p {
     body {font-family: Verdana, sans-serif;}
 }
 
-ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
 
 
 
@@ -174,4 +174,31 @@ p #online{
   position: relative;
   right: 80px;
   text-align: right;
+}
+
+
+/* Navigation Bar Styling */
+
+#nav a {
+	text-decoration: none;
+	font-size: 15px;
+	font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+  color: #373737;
+  text-align: center;
+  display: block;
+  padding: 14px 16px;
+}
+#nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#nav li {
+  float: left;
+}
+#nav li a:hover {
+  background-color: #f4f4f4;
 }
