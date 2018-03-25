@@ -4,11 +4,10 @@ body, html {
 body {
   background-color: lightblue;
   font-family: Verdana, sans-serif;
+  margin: 0px;
 }
 
-header {
-  background-color: #ECECEC;
-}
+
 body {
     background-color: white;
 }
@@ -22,7 +21,8 @@ h1 {
 .parallax {
     /* The image used */
     background-image: url("../images/stemhkbanner.jpg");
-
+    opacity: 0.65;
+    position: relative;
     /* Full height */
     height: 90%;
 
@@ -34,8 +34,8 @@ h1 {
 }
 .parallax2 {
     /* The image used */
-    background-image: url("../images/gradeschoolbanner.jpg");
-
+    background-image: url("../images/lightBlueBackground.jpg");
+    position: relative;
     /* Full height */
     height: 90%;
 
@@ -46,12 +46,12 @@ h1 {
     background-size: cover;
 }
 
-.parallax3{
-  background-image: url("../images/middleschoolbanner.jpg");
+.parallax3 {
+  background-image: url("../images/yellowBackground.jpg");
 
   /* Full height */
   height: 90%;
-
+  position: relative;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -61,8 +61,8 @@ h1 {
 }
 
 .parallax4 {
-  background-image: url("../images/highschoolbanner.jpg");
-
+  background-image: url("../images/salmonBackground.jpg");
+  position: relative;
   /* Full height */
   height: 90%;
 
@@ -74,8 +74,8 @@ h1 {
 }
 
 .parallax5 {
-  background-image: url("onlinebanner.jpg");
-
+  background-image: url("../images/blueBackground.jpg");
+  position: relative;
   /* Full height */
   height: 90%;
 
@@ -179,6 +179,15 @@ p #online{
 
 /* Navigation Bar Styling */
 
+#nav {
+  background-color: #ECECEC;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+}
+
 #nav a {
 	text-decoration: none;
 	font-size: 15px;
@@ -219,4 +228,18 @@ p #online{
   padding: 18px;
   font-size: 25px;
   letter-spacing: 10px;
+}
+
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
 }
