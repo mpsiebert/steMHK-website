@@ -101,16 +101,21 @@ a {
 
 
 p {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 25px;
-    color: white;
-    ul {list-style-type: none;}
-    body {font-family: Verdana, sans-serif;}
+    color: #F1F1F2;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0 20px;
 }
-
-
-
-
+iframe {
+  margin: 0 0 0 150px;
+  padding: 0;
+  border: none;
+  width: 750px;
+  height: 600px;
+}
+.calendar {
+  width: 700px;
+  height: 700px;
+}
 .buttons {
   text-align: center;
  display: inline-block;
@@ -214,6 +219,14 @@ p #online{
 
 a:link {
   text-decoration: none;
+}
+
+footer {
+  background-color: #5DA2D5;
+  color: #373737;
+  text-align: right;
+  clear: left;
+  height: 50px;
 }
 
 .caption {
