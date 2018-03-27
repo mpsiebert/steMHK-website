@@ -212,6 +212,9 @@ p #online{
   background-color: #f4f4f4;
 }
 
+a:link {
+  text-decoration: none;
+}
 
 .caption {
   position: absolute;
