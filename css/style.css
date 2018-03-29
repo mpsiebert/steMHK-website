@@ -19,10 +19,16 @@ body {
 }
 
 h1 {
-    color: #D09683;
+    color: #373737;
     text-align: center;
-    font: "couri";
-    font-size: 40px;
+    font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+}
+label {
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  color: #373737;
+}
+
+
 }
 .parallax {
     /* The image used */
@@ -164,9 +170,9 @@ mark {
 
 hr {
   height: 4px;
-  color: #A1D6E2;
-  background-color: #A1D6E2;
-  border-color: #A1D6E2;
+  color: #F3D250;
+  background-color: #F3D250;
+  border-color: #F3D250;
 }
 
 
@@ -294,16 +300,16 @@ button:hover {
   opacity:1;
 }
 
-/* Extra styles for the cancel button */
-.cancelbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
-}
+
+
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
+.cancelbtn, .signup {
   float: left;
   width: 50%;
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  padding: 14px 20px;
+  background-color: #f1f1f1;
 }
 
 /* Add padding to container elements */
@@ -321,14 +327,14 @@ button:hover {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: #474e5d;
+  background-color: #F3D250;
   padding-top: 50px;
   margin: 30px 0px 0px 0px;
 }
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #ececec;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
