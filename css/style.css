@@ -27,9 +27,6 @@ label {
   font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
   color: #373737;
 }
-
-
-}
 .parallax {
     /* The image used */
     background-image: url("../images/banner.jpg");
@@ -256,18 +253,6 @@ footer {
 
 
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-}
-
 
 
 * {box-sizing: border-box}
@@ -300,9 +285,6 @@ button:hover {
   opacity:1;
 }
 
-
-
-
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn, .signup {
   float: left;
@@ -324,9 +306,9 @@ button:hover {
   z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
   background-color: #F3D250;
   padding-top: 50px;
   margin: 30px 0px 0px 0px;
@@ -335,9 +317,9 @@ button:hover {
 /* Modal Content/Box */
 .modal-content {
   background-color: #ececec;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  margin: 5% auto 15% auto;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 40%;
 }
 
 /* Style the horizontal ruler */
