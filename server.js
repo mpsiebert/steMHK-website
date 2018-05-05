@@ -1,36 +1,66 @@
-var http = require('http')
-var fs = require('fs')
-var url = require('url')
+"use strict";
 
+const PORT = 3000;
+const http = require('http');
+const fs = require('fs');
 
-// create the Server
-http.createServer( function(req, res) {
-  // parse the request containing the file name
-  var pathname = url.parse(req.url).pathname;
+function serveIndex(path, res) {
+    fs.readdir('public' + path, function(err, files) {
+        if(err) {
+            console.error(err);
+            res.statusCode = 404;
+            res.end("Server Error");
+        }
 
-  // print the name of the file for which the request is made
-  console.log("Request for" + pathname + " received.");
+        fs.access('index.html', 'r', (err, fd) => {
+          serveFile(path, res);
+        });
 
-  // read the request file content from file system
-  fs.readFile(pathname.substr(1), function(err, data) {
-    if(err) {
-      console.log(err);
-      // HTTP Status: 404 : NOT FOUND
-      // Content Type: text/plain
-      res.writeHead(404, {'Content-Type': 'text/html'});
-    }else{
-      // Page FOUND
-      // HTTP Status: 200 : OK
-      // Content Type: text/plain
-      res.writeHead(200, {'Content-Type': 'text/html'});
+        var html = "<p>Index of " + path + "</p>";
+        html += "<ul>";
+        html += files.map(function(item){
+          console.log(path);
+          if(path != "/") {
+            return "<li><a href='" + path + '/' + item + "'>" + item + "</a></li>";
+          }
+          return "<li><a href='" + item + "'>" + item + "</a></li>";
+        }).join("");
+        html += "</ul>";
+        res.end(html);
+    });
+}
 
-      // write the content of the file to response body
-      res.write(data.toString());
+function serveFile(path, res) {
+    fs.readFile('public' + path, function(err, data) {
+        if(err) {
+          console.error(err);
+          res.statusCode = 404;
+          res.end("File could not be found.");
+          return;
+        }
+        res.end(data);
+    });
+}
+
+function handleRequest(req, res) {
+console.log(req.url);
+      fs.stat('public' + req.url, function(err, stats) {
+        if(err) {
+          res.statusCode = 404;
+          res.end("File could not be found.");
+        }
+        else if(!stats.isFile()) {
+          serveIndex(req.url, res);
+        }
+        else {
+          serveFile(req.url, res);
+
+        }
+      })
     }
-    // send response body
-    res.end();
-  });
-}).listen(8081);
 
-// console will print the message
-console.log('Server running at http://127.0.0.1:8081/');
+var server = http.createServer(handleRequest);
+
+server.listen(PORT, function(){
+    console.log("Listening on port " + PORT);
+});
