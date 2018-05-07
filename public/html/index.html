@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>steMHK</title>
+    <title>steMHK: Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <script src="../js/signup.js"></script>
@@ -11,16 +11,16 @@
   <body onload="document.registration.userid.focus();">
     <div id="nav">
       <ul>
-        <li><a>HOME</a href="index.html"></li>
+        <li><a href="index.html">HOME</a></li>
         <li><a href="#events">EVENTS</a></li>
         <li><a href="#signup">SIGN UP</a></li>
         <li><a href="#resources">RESOURCES</a></li>
-        <img src="../images/apple.png">
+        <img src="../images/apple.png" alt="apple">
       </ul>
     </div>
     <div class="parallax">
       <div class="caption">
-        <a name="events"></a>
+        <a id="events"></a>
       </div>
     </div>
 
@@ -30,48 +30,52 @@
         <span class="border">
 
           <a href="events.html">EVENTS</a></span>
-        <a name="signup"></a>
+        <a id="signup"></a>
       </div>
     </div>
 
     <div class="parallax3">
       <div class="caption">
-        <button onclick="document.getElementById('id01').style.display='block'">SIGN UP</button><a name="resources"></a>
+        <button onclick="document.getElementById('id01').style.display='block'">SIGN UP</button><a id="resources"></a>
       </div>
     </div>
 
     <div class="parallax4">
       <div class="caption">
-        <span class="border"><a href="resources.html">FIND RESOURCES</a></span><a name="about"></a>
+        <span class="border"><a href="resources.html">FIND RESOURCES</a></span>
       </div>
     </div>
 
     <!-- The Modal (contains the Sign Up form) -->
     <div id="id01" class="modal">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">X</span>
-      <form class="modal-content" name="registration" onSubmit="return formValidation();">
+      <form class="modal-content" id="myForm" action="/action_page.php" name="registration" onSubmit="return formValidation();">
         <div class="container">
           <h1>Organization Registration Form</h1>
           <hr>
 
           <label for="desc"><b>Organization Name</b></label>
-          <input type="text" placeholder="Enter Name">
+          <input type="text" id="desc" placeholder="Enter Name">
 
           <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required>
+          <input type="text" placeholder="Enter Email" name="email" id="email" required>
 
           <label for="passid"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="passid" required>
+          <input type="password" placeholder="Enter Password" name="passid" id="passid" required>
 
           <div class="clearfix">
             <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-            <button type="submit" class="signup">Sign Up</button>
+            <button type="submit" value="Submit" class="signup">Sign Up</button>
           </div>
         </div>
       </form>
     </div>
+
+
     <footer>
         <p><small>&#169; 2018 steMHK</small></p>
     </footer>
+
+
   </body>
 </html>

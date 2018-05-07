@@ -18,17 +18,6 @@ body {
     background-color: #ececec;
 }
 
-.scholarshiplinks {
-    padding: 18px;
-    font-size: 15px;
-    letter-spacing: 3px;
-    background-color: #111;
-    width: 500px;
-     margin: 0 auto;
-}
-.scholarshiplinks a {
-  color: #fff;
-}
 h1 {
     color: #373737;
     text-align: center;
@@ -57,7 +46,7 @@ label {
     background-image: url("../images/wheat.jpg");
     position: relative;
     /* Full height */
-    opacity: 0.65;
+    opacity: 0.35;
     height: 90%;
 
     /* Create the parallax scrolling effect */
@@ -69,7 +58,7 @@ label {
 
 .parallax3 {
   background-image: url("../images/backgrnd1.jpg");
-  opacity: 0.65;
+  opacity: 0.35;
   /* Full height */
   height: 90%;
   position: relative;
@@ -86,29 +75,13 @@ label {
   position: relative;
   /* Full height */
   height: 90%;
-  opacity: 0.65;
+  opacity: 0.35;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.parallax5 {
-  background-image: url("../images/blueBackground.jpg");
-  position: relative;
-  /* Full height */
-  height: 90%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-
-}
-
 ul {
   font-family: "sans-serrif, Times, serif";
   font-size: 25px;
@@ -132,8 +105,6 @@ iframe {
   border: none;
   width: 750px;
   height: 600px;
-  border: 0px;
-  overflow: hidden;
 }
 .calendar {
   width: 700px;
@@ -324,7 +295,11 @@ button:hover {
   padding-top: 50px;
   margin: 30px 0px 0px 0px;
 }
-
+#scholarshiplinks {
+    padding: 18px;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
 /* Modal Content/Box */
 .modal-content {
   background-color: #ececec;
